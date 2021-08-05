@@ -1,0 +1,1 @@
+Fake shop application on React Typescript
