@@ -1,0 +1,1 @@
+export const addCategoriesAction = (payLoad:any) => ({type: "ADD_CATEGORIES", payLoad})
