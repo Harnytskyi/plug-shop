@@ -1,10 +1,10 @@
 import React from 'react'
-import {fetchCategories, fetchProducts} from '../asyncActions/products'
+import {fetchCategories} from '../asyncActions/products'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 interface CategoryProps{
-    fetchCategories(): any,
+    fetchCategories(): void,
     categories: []
 }
 interface RootState{

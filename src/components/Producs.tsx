@@ -23,10 +23,8 @@ interface ProductsProps{
     }[]
 }
 
-
-
 export class Products extends React.Component<ProductsProps>{
-    constructor(props: any){
+    constructor(props: ProductsProps){
         super(props);
         this.state = {
             error: null
@@ -47,7 +45,8 @@ export class Products extends React.Component<ProductsProps>{
     componentDidMount(){
         this.showProducts()
     }
-    componentDidUpdate(prevProps: any){
+    
+    componentDidUpdate(prevProps: ProductsProps){
         if(prevProps.match.params.category !==this.props.match.params.category)
         this.showProducts()
     }

@@ -38,11 +38,8 @@ export const fetchProducts = (category: string) => {
 
     }
 }
-interface response{
-    status: number
-    json: any
-}
-function fetchHandler(res: response){
+
+function fetchHandler(res: Response){
   if (res.status >= 400 && res.status < 600) {
     return Promise.reject(res);
   }
